@@ -66,8 +66,7 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
                 
                 <p>
                     <?php
-                        $schoolAverage = ($class[$i]["votes"]["english"] + $class[$i]["votes"]["math"] 
-                        + $class[$i]["votes"]["chemistry"]) / count($class[$i]["votes"]);
+                        $schoolAverage = array_sum($class[$i]["votes"]) / count($class[$i]["votes"]);
                         echo "Media Scolastica : " . round($schoolAverage, 1);
                     ?>
                 </p>

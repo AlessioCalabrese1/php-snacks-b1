@@ -18,7 +18,16 @@
         necessitatibus odio totam quia odit, doloribus incidunt reprehenderit provident atque quas fugiat mollitia ut officia praesentium quae cum saepe!";
     
         $paragraphContainer = explode(".", $paragraph);
-        var_dump($paragraphContainer);
+        
+        for ($i=0; $i < count($paragraphContainer); $i++) { 
+    ?>
+        <h4>
+            <?php
+                echo $paragraphContainer[$i];
+            ?>
+        </h4>
+    <?php
+        }
     ?>
 </body>
 </html>
